@@ -5,7 +5,6 @@ import Header from "../components/Header/Header";
 
 const MainLayout = () => {
     const location = useLocation()
-    console.log(location)
     return (
         <div>
             <div>
