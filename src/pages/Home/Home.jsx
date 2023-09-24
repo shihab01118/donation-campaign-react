@@ -5,7 +5,7 @@ import Categories from "../../components/Categories/Categories";
 const Home = () => {
     const categories = useLoaderData()
     return (
-        <div className="container mx-auto">
+        <div>
             {
                 <Categories categories={categories}></Categories>
             }
