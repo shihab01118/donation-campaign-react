@@ -1,13 +1,15 @@
 import Banner from "./Banner/Banner";
 import Navbar from "./Navbar/Navbar";
-import Cover from '../../assets/cover.jpg';
+import "./Header.css"
 
 
 const Header = () => {
     return (
-        <div className="bg-rose-200">
+        <div className="header bg-cover bg-center">
+            <div className="container mx-auto">
             <Navbar></Navbar>
             <Banner></Banner>
+            </div>
         </div>
     );
 };

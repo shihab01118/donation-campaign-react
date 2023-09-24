@@ -1,0 +1,122 @@
+[
+    {
+      "picture": "https://ibb.co/QYXz9y6",
+      "title": "Clean Water for Communities",
+      "category": "Health",
+      "category_bg": "#AEC8FF",
+      "card_bg": "#0052ff26",
+      "text_or_button_color": "#0052FF",
+      "description": "Your donation will help provide clean and safe drinking water to communities in need. Access to clean water is essential for good health and well-being, and your contribution can make a significant impact.",
+      "amount": 25.00
+    },
+    {
+      "picture": "https://ibb.co/4J0b7hD",
+      "title": "Educational Scholarships",
+      "category": "Education",
+      "category_bg": "#ffc3c5",
+      "card_bg": "#ffe3e4",
+      "text_or_button_color": "#FF444A",
+      "description": "Support the dreams and aspirations of bright students by contributing to educational scholarships. Your donation will help deserving students access quality education and build a brighter future.",
+      "amount": 50.00
+    },
+    {
+      "picture": "https://ibb.co/4sVBSDf",
+      "title": "Warm Clothing for Needy Families",
+      "category": "Clothing",
+      "category_bg": "#d4ecc1",
+      "card_bg": "#ebf6e2",
+      "text_or_button_color": "#79C23F",
+      "description": "Help keep families warm during the cold winter months by donating warm clothing. Your contribution will provide essential clothing items to those in need, ensuring they stay comfortable and safe.",
+      "amount": 20.00
+    },
+    {
+      "picture": "https://ibb.co/KjSMsyw",
+      "title": "Nutritious Meals for Children",
+      "category": "Food",
+      "category_bg": "#fdd2c4",
+      "card_bg": "#feeae3",
+      "text_or_button_color": "#F87147",
+      "description": "Support the health and development of underprivileged children by donating towards nutritious meals. Your generosity will provide children with the sustenance they need to thrive and grow.",
+      "amount": 30.00
+    },
+    {
+      "picture": "https://ibb.co/QYXz9y6",
+      "title": "Medical Supplies for Health Clinics",
+      "category": "Health",
+      "category_bg": "#AEC8FF",
+      "card_bg": "#0052ff26",
+      "text_or_button_color": "#0052FF",
+      "description": "Contribute to the availability of essential medical supplies at local health clinics. Your donation will ensure that medical professionals can provide quality care to those in need of medical assistance.",
+      "amount": 40.00
+    },
+    {
+      "picture": "https://ibb.co/4J0b7hD",
+      "title": "Educational Resources for Schools",
+      "category": "Education",
+      "category_bg": "#ffc3c5",
+      "card_bg": "#ffe3e4",
+      "text_or_button_color": "#FF444A",
+      "description": "Empower schools with educational resources and tools to enhance the learning experience for students. Your support will help create a conducive environment for education and growth.",
+      "amount": 35.00
+    },
+    {
+      "picture": "https://ibb.co/4sVBSDf",
+      "title": "Winter Blankets for Families",
+      "category": "Clothing",
+      "category_bg": "#d4ecc1",
+      "card_bg": "#ebf6e2",
+      "text_or_button_color": "#79C23F",
+      "description": "Make a difference in the lives of families by providing warm blankets for the winter season. Your donation will bring comfort and relief to those facing harsh weather conditions.",
+      "amount": 15.00
+    },
+    {
+      "picture": "https://ibb.co/KjSMsyw",
+      "title": "Food Aid for Vulnerable Seniors",
+      "category": "Food",
+      "category_bg": "#fdd2c4",
+      "card_bg": "#feeae3",
+      "text_or_button_color": "#F87147",
+      "description": "Help ensure that vulnerable seniors have access to nourishing meals. Your contribution will support programs that provide food assistance to elderly individuals in need.",
+      "amount": 25.00
+    },
+    {
+      "picture": "https://ibb.co/QYXz9y6",
+      "title": "Emergency Medical Relief",
+      "category": "Health",
+      "category_bg": "#AEC8FF",
+      "card_bg": "#0052ff26",
+      "text_or_button_color": "#0052FF",
+      "description": "Assist in providing emergency medical relief to areas affected by disasters or crises. Your donation will help save lives by providing immediate medical care and supplies.",
+      "amount": 50.00
+    },
+    {
+      "picture": "https://ibb.co/4J0b7hD",
+      "title": "School Meals for Children",
+      "category": "Education",
+      "category_bg": "#ffc3c5",
+      "card_bg": "#ffe3e4",
+      "text_or_button_color": "#FF444A",
+      "description": "Support initiatives that provide daily school meals to children in underserved communities. Your contribution will help improve attendance, concentration, and overall well-being.",
+      "amount": 20.00
+    },
+    {
+      "picture": "https://ibb.co/4sVBSDf",
+      "title": "Community Clothing Drive",
+      "category": "Clothing",
+      "category_bg": "#d4ecc1",
+      "card_bg": "#ebf6e2",
+      "text_or_button_color": "#79C23F",
+      "description": "Join our community clothing drive to collect and distribute clothing to those in need. Your involvement will make a meaningful impact on the lives of individuals and families.",
+      "amount": 10.00
+    },
+    {
+      "picture": "https://ibb.co/KjSMsyw",
+      "title": "Food Assistance for Families",
+      "category": "Food",
+      "category_bg": "#fdd2c4",
+      "card_bg": "#feeae3",
+      "text_or_button_color": "#F87147",
+      "description": "Provide essential food assistance to families facing food insecurity. Your donation will help ensure that families have access to nutritious meals during difficult times.",
+      "amount": 30.00
+    }
+  ]
