@@ -42,7 +42,7 @@ const CategoryCard = ({ category }) => {
         Swal.fire({
             icon: 'error',
             title: 'Already Exist!',
-          })
+        })
       }
     }
   };
