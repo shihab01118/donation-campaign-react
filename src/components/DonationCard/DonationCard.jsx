@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const DonationCard = ({ category }) => {
   const {
     image,
@@ -7,6 +9,7 @@ const DonationCard = ({ category }) => {
     card_bg,
     amount,
     text_or_button_color,
+    id,
   } = category;
 
   const cardStyle = {
@@ -42,12 +45,14 @@ const DonationCard = ({ category }) => {
           ${amount}
         </p>
         <div>
-          <button
-            className="btn text-white capitalize"
-            style={{ backgroundColor: text_or_button_color }}
-          >
-            View Details
-          </button>
+          <Link to={`/donation/${id}`}>
+            <button
+              className="btn text-white capitalize"
+              style={{ backgroundColor: text_or_button_color }}
+            >
+              View Details
+            </button>
+          </Link>
         </div>
       </div>
     </div>
