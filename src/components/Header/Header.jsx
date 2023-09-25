@@ -9,7 +9,7 @@ const Header = () => {
         alt=""
         className="h-[100vh] w-full"
       />
-      <div className="absolute inset-0 bg-gray-200 opacity-70">
+      <div className="absolute inset-0 bg-gray-100 opacity-90">
         <div className="">
           <Navbar></Navbar>
           <Banner></Banner>
