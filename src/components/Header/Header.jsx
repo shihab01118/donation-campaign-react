@@ -1,7 +1,5 @@
 import Banner from "./Banner/Banner";
 import Navbar from "./Navbar/Navbar";
-// import Cover1 from "../../assets/cover.jpg"
-// import "./Header.css"
 
 const Header = () => {
   return (
@@ -11,8 +9,8 @@ const Header = () => {
         alt=""
         className="h-[100vh] w-full"
       />
-      <div className="absolute inset-0 bg-gray-200 opacity-80">
-        <div className="container mx-auto ">
+      <div className="absolute inset-0 bg-gray-200 opacity-70">
+        <div className="">
           <Navbar></Navbar>
           <Banner></Banner>
         </div>

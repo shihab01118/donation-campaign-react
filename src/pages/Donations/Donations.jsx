@@ -24,7 +24,7 @@ const Donations = () => {
         </p>
       ) : (
         <div className="my-8">
-          <div className="grid md:grid-cols-2 gap-6 ">
+          <div className="grid lg:grid-cols-2 gap-6 ">
             {isSeeAll
               ? categories?.map((category, idx) => (
                   <DonationCard key={idx} category={category}></DonationCard>

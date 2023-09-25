@@ -12,28 +12,22 @@ const DonationCard = ({ category }) => {
     id,
   } = category;
 
-  const cardStyle = {
-    backgroundColor: card_bg,
-  };
-  const categoryStyle = {
-    backgroundColor: category_bg,
-    color: text_or_button_color,
-  };
-
   return (
     <div
-      className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100"
-      style={cardStyle}
+      className="flex flex-col rounded-lg shadow md:flex-row"
+      style={{backgroundColor: card_bg}}
     >
+      <div className="md:w-[250px] h-auto">
       <img
-        className="object-cover w-full rounded-t-lg h-96 md:h-full md:w-[200px] md:rounded-none md:rounded-l-lg"
+        className="w-full h-full rounded-[8px_8px_0px_0px] md:rounded-[8px_0px_0px_8px]"
         src={image}
         alt=""
       ></img>
+      </div>
       <div className="flex flex-col justify-between p-5 leading-normal">
         <p
           className="w-fit px-2 py-1 rounded font-medium text-sm mb-2"
-          style={categoryStyle}
+          style={{backgroundColor: category_bg, color: text_or_button_color}}
         >
           {category_name}
         </p>
@@ -45,14 +39,14 @@ const DonationCard = ({ category }) => {
           ${amount}
         </p>
         <div>
-          {/* <Link to={`/donation/${id}`}> */}
+          <Link to={`/donation/${id}`}>
             <button
               className="btn text-white capitalize"
               style={{ backgroundColor: text_or_button_color }}
             >
               View Details
             </button>
-          {/* </Link> */}
+          </Link>
         </div>
       </div>
     </div>

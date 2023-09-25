@@ -9,7 +9,7 @@ const MainLayout = () => {
       <div>
         {location.pathname === "/" ? <Header></Header> : <Navbar></Navbar>}
       </div>
-      <div className="container mx-auto">
+      <div className="mx-8 md:mx-16 lg:mx-auto lg:container">
         <Outlet></Outlet>
       </div>
     </div>

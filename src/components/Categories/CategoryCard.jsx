@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-// import Swal from "sweetalert2";
 
 const CategoryCard = ({ category }) => {
   const {
@@ -12,33 +11,11 @@ const CategoryCard = ({ category }) => {
     id,
   } = category || {};
 
-  // const handleAddToDonations = () => {
-  //   const donationsArray = [];
-  //   const donationCategories = JSON.parse(localStorage.getItem("donations"));
-  //   if (!donationCategories) {
-  //     donationsArray.push(category);
-  //     localStorage.setItem("donations", JSON.stringify(donationsArray));
-  //   } else {
-  //     const isExist = donationCategories.find((category) => category.id === id);
-
-  //     if (!isExist) {
-  //       donationsArray.push(...donationCategories, category);
-  //       localStorage.setItem("donations", JSON.stringify(donationsArray));
-  //     }
-  //     else {
-  //       Swal.fire({
-  //           icon: 'error',
-  //           title: 'Already Exist!',
-  //       })
-  //     }
-  //   }
-  // };
-
   return (
     <Link to={`/donation/${id}`}>
       <div className="shadow-xl rounded-xl" style={{backgroundColor: card_bg}}>
         <figure>
-          <img src={image} alt="img" style={{borderRadius: `12px 12px 0 0`}} />
+          <img src={image} alt="img" className="h-[240px]" style={{borderRadius: `12px 12px 0 0`}} />
         </figure>
         <div className="mt-5 p-4 h-[120px]">
           <p
