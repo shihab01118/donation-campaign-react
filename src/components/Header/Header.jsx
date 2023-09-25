@@ -1,17 +1,24 @@
 import Banner from "./Banner/Banner";
 import Navbar from "./Navbar/Navbar";
-import "./Header.css"
-
+// import Cover1 from "../../assets/cover.jpg"
+// import "./Header.css"
 
 const Header = () => {
-    return (
-        <div className="header bg-cover bg-center">
-            <div className="container mx-auto">
-            <Navbar></Navbar>
-            <Banner></Banner>
-            </div>
+  return (
+    <div className="relative h-[100vh]">
+      <img
+        src={`https://img.freepik.com/free-photo/people-meeting-community-center_23-2149155300.jpg?w=740&t=st=1695649978~exp=1695650578~hmac=748b94a11f1315697c70e096a9364273b968b1431dfc5f18e8681ee6336b66c0`}
+        alt=""
+        className="h-[100vh] w-full"
+      />
+      <div className="absolute inset-0 bg-gray-200 opacity-80">
+        <div className="container mx-auto ">
+          <Navbar></Navbar>
+          <Banner></Banner>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Header;

@@ -16,14 +16,32 @@ const DonationDetails = () => {
     setCategory(matchedCategory);
   }, [allCategories, idInt]);
 
-  const { title, image, description, amount } = category || {};
+  const { title, image, description, amount, text_or_button_color } = category || {};
 
   const handledonate =() => {
-    Swal.fire({
-        icon: 'success',
-        title: 'Thank You',
-        text: `You Just Donated $ ${amount}`
-    })
+    const donationsArray = [];
+    const donationCategories = JSON.parse(localStorage.getItem("donations"));
+    if (!donationCategories) {
+      donationsArray.push(category);
+      localStorage.setItem("donations", JSON.stringify(donationsArray));
+    } else {
+      // const isExist = donationCategories.find((category) => category.id === id);
+
+      // if (!isExist) {
+        donationsArray.push(...donationCategories, category);
+        localStorage.setItem("donations", JSON.stringify(donationsArray));
+        Swal.fire({
+          icon: 'success',
+          title: `You've Donated Successfully!!`,
+      })
+      // }
+      // else {
+      //   Swal.fire({
+      //       icon: 'error',
+      //       title: 'Already Exist!',
+      //   })
+      // }
+    }
   }
 
   return (
@@ -33,7 +51,7 @@ const DonationDetails = () => {
             <div className="p-7 bg-gray-800 absolute inset-0 h-[104px] top-[calc(100%-104px)] opacity-70" style={{borderRadius: '0 0 12px 12px'}}>
                 <button 
                 onClick={handledonate}
-                className="btn bg-[#FF444A] text-white font-semibold capitalize opacity-100">Donate ${amount}</button>
+                className="btn text-white font-semibold capitalize opacity-100" style={{backgroundColor:text_or_button_color}}>Donate ${amount}</button>
             </div>
         </div>
         <div className="mt-8">

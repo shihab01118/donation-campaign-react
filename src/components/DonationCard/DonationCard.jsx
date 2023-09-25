@@ -45,14 +45,14 @@ const DonationCard = ({ category }) => {
           ${amount}
         </p>
         <div>
-          <Link to={`/donation/${id}`}>
+          {/* <Link to={`/donation/${id}`}> */}
             <button
               className="btn text-white capitalize"
               style={{ backgroundColor: text_or_button_color }}
             >
               View Details
             </button>
-          </Link>
+          {/* </Link> */}
         </div>
       </div>
     </div>
