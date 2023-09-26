@@ -8,7 +8,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh -->
 
 
-# Features of Our Programming Language Courses Website
+# Features of Our Donation Campaign Website
 ## 1. Platform: 
 - [x] It is a funding based social developing website. This website is to arrange fund to help the people who can't get food, education, water, treatment and so on. We can help people through this website.  
 ## 2. Track Donation & Get Inspired:
