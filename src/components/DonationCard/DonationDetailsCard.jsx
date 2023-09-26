@@ -42,7 +42,7 @@ const DonationDetailsCard = ({category}) => {
             <div className="p-7 bg-gray-800 absolute inset-0 h-[104px] top-[calc(100%-104px)] opacity-70" style={{borderRadius: '0 0 12px 12px'}}>
                 <button 
                 onClick={handledonate}
-                className="btn-sm rounded-md md:btn text-white font-semibold capitalize opacity-100" style={{backgroundColor:text_or_button_color}}>Donate ${amount}</button>
+                className="btn text-white font-semibold capitalize opacity-100" style={{backgroundColor:text_or_button_color}}>Donate ${amount}</button>
             </div>
         </div>
         <div className="mt-4 lg:mt-8">
