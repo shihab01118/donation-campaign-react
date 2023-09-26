@@ -1,7 +1,8 @@
 import Banner from "./Banner/Banner";
 import Navbar from "./Navbar/Navbar";
+import PropTypes from 'prop-types';
 
-const Header = () => {
+const Header = ({ handleSearch }) => {
   return (
     <div className="relative h-[100vh]">
       <img
@@ -12,11 +13,15 @@ const Header = () => {
       <div className="absolute inset-0 bg-gray-100 opacity-90">
         <div className="">
           <Navbar></Navbar>
-          <Banner></Banner>
+          <Banner handleSearch={handleSearch}></Banner>
         </div>
       </div>
     </div>
   );
 };
+
+Header.propTypes = {
+  handleSearch: PropTypes.func,
+}
 
 export default Header;
