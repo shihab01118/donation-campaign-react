@@ -23,7 +23,7 @@ const Donations = () => {
           {isAdded}
         </p>
       ) : (
-        <div className="my-8">
+        <div className="my-8 mx-8 md:mx-16 lg:mx-auto lg:container">
           <div className="grid lg:grid-cols-2 gap-6 ">
             {isSeeAll
               ? categories?.map((category, idx) => (
