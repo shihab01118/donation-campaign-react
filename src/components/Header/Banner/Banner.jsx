@@ -17,7 +17,7 @@ const Banner = ({handleSearch}) => {
           <input
             type="text"
             name="input"
-            placeholder="Search here...."
+            placeholder="Search by category..."
             className="input input-bordered w-full"
             onChange={(e) => setSearchValue(e.target.value)}
           />

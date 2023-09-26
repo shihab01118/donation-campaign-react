@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTyeps from 'prop-types'
 
 const CategoryCard = ({ category }) => {
   const {
@@ -32,5 +33,9 @@ const CategoryCard = ({ category }) => {
     </Link>
   );
 };
+
+CategoryCard.propTypes = {
+  category: PropTyeps.object,
+}
 
 export default CategoryCard;

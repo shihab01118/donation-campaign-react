@@ -1,5 +1,6 @@
 
 import Swal from "sweetalert2";
+import PropTyeps from 'prop-types'
 
 const DonationDetailsCard = ({category}) => {
     const { title, image, description, amount, text_or_button_color, id } = category || {};
@@ -36,9 +37,9 @@ const DonationDetailsCard = ({category}) => {
   }
 
     return (
-        <div className="lg:w-[80%] mx-auto">
+        <div className="w-[85%] md:w-[75%] mx-auto">
         <div className="relative">
-            <div><img src={image} alt="" className="w-full h-[80vh] rounded-xl" /></div>
+            <div><img src={image} alt="" className="w-full h-[250px] md:h-[80vh] rounded-xl" /></div>
             <div className="p-7 bg-gray-800 absolute inset-0 h-[104px] top-[calc(100%-104px)] opacity-70" style={{borderRadius: '0 0 12px 12px'}}>
                 <button 
                 onClick={handledonate}
@@ -52,5 +53,9 @@ const DonationDetailsCard = ({category}) => {
     </div>
     );
 };
+
+DonationDetailsCard.propTypes = {
+  category: PropTyeps.object,
+}
 
 export default DonationDetailsCard;

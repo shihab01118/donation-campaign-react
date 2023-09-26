@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTyeps from 'prop-types'
 
 const DonationCard = ({ category }) => {
   const {
@@ -52,5 +53,9 @@ const DonationCard = ({ category }) => {
     </div>
   );
 };
+
+DonationCard.propTypes = {
+  category: PropTyeps.object,
+}
 
 export default DonationCard;
