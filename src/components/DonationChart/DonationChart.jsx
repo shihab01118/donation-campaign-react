@@ -1,4 +1,5 @@
 import { PieChart, Pie, Cell } from "recharts";
+import PropTypes from 'prop-types';
 
 const DonationChart = ({donation, remainingDonation}) => {
     console.log(donation, remainingDonation)
@@ -57,5 +58,10 @@ const DonationChart = ({donation, remainingDonation}) => {
         </PieChart>
     );
 };
+
+DonationChart.propTypes = {
+    donation: PropTypes.number,
+    remainingDonation: PropTypes.number,
+}
 
 export default DonationChart;
