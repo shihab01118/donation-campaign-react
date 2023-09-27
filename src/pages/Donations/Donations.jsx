@@ -42,10 +42,10 @@ const Donations = () => {
           <div className="mt-6 text-center">
             {categories.length > 4 ? (
               <button
-                onClick={() => setIsSeeAll(!isSeeAll)}
-                className="btn bg-[#FF444A] text-white font-semibold capitalize"
+                onClick={() => setIsSeeAll(true)}
+                className={isSeeAll ? 'hidden' : "btn bg-[#FF444A] text-white font-semibold capitalize"}
               >
-                {isSeeAll ? "see less" : "see all"}
+                see all
               </button>
             ) : (
               ""
