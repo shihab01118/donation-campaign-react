@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import DonationCard from "../../components/DonationCard/DonationCard";
+import { Helmet } from "react-helmet-async";
 
 const Donations = () => {
   const [categories, setCategories] = useState([]);
@@ -18,6 +19,9 @@ const Donations = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Donation Campaign | Donation</title>
+      </Helmet>
       {isAdded ? (
         <p className="flex justify-center items-center h-[70vh] text-xl text-[#FF444A]">
           {isAdded}

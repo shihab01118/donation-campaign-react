@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import DonationDetailsCard from "../../components/DonationCard/DonationDetailsCard";
+import { Helmet } from "react-helmet-async";
 
 const DonationDetails = () => {
   const [category, setCategory] = useState({});
@@ -19,7 +20,14 @@ const DonationDetails = () => {
   
 
 
-  return <DonationDetailsCard category={category}></DonationDetailsCard>;
+  return (
+  <div>
+    <Helmet>
+      <title>Donation Page - {id}</title>
+    </Helmet>
+    <DonationDetailsCard category={category}></DonationDetailsCard>
+  </div>
+  );
 };
 
 export default DonationDetails;
